@@ -5,11 +5,10 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
-import Paper from "@material-ui/core/Paper";
-import stateDiff from "./stateDiff.gif";
-import componentTree from "./componentTree.gif";
-import componentGraph from "./componentGraph.gif";
-import atomNetwork from "./atomNetwork.gif";
+import stateDiff from "../../assets/gifs/features/stateDiff.gif";
+import componentTree from "../../assets/gifs/features/componentTree.gif";
+import componentGraph from "../../assets/gifs/features/componentGraph.gif";
+import atomNetwork from "../../assets/gifs/features/atomNetwork.gif";
 
 const useStyles = makeStyles((theme) => ({
   cardGrid: {
@@ -20,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     display: "flex",
     flexDirection: "column",
+    
   },
   cardContent: {
     flexGrow: 1,
@@ -27,11 +27,12 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: "45px",
     fontWeight: "bold",
-    paddingTop: "40px",
+    paddingTop: "90px",
+    marginBottom:"0px"
   },
   cardDiscription: {
     fontSize: "13px",
-    alignContent: "center"
+    
   },
   cardTitle: {
     fontWeight: "bold",
@@ -56,7 +57,8 @@ function Features() {
   const classes = useStyles();
 
   return (
-    <>
+    <div  id="features">
+      
       <Typography align="center" className={classes.title}>
         FEATURES
       </Typography>
@@ -197,7 +199,7 @@ function Features() {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </div>
   );
 }
 

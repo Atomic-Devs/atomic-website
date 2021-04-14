@@ -45,17 +45,17 @@ const useStyles = makeStyles({
 });
 
 const navLinks = [
-  { title: `home`, path: `/home` },
-  { title: `features`, path: `/features` },
-  { title: `demo`, path: `/demo` },
-  { title: `team`, path: `/team` },
+  { title: `home`, path: `#home` },
+  { title: `features`, path: `#features` },
+  { title: `demo`, path: `#demo` },
+  { title: `team`, path: `#team` },
 ];
 
 function NavBar() {
   const classes = useStyles();
 
   return (
-    <>
+    <div id="home">
       <CssBaseline />
       <AppBar position="fixed" style={{background: '#202020'}} >
         <Toolbar >
@@ -85,7 +85,7 @@ function NavBar() {
           </Container>
         </Toolbar>
       </AppBar>
-    </>
+    </div>
   )
 }
 

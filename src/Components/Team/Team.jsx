@@ -44,7 +44,7 @@ function Team() {
   const preventDefault = (event) => event.preventDefault();
 
   return (
-    <>
+    <div id="team">
       <Typography align="center" className={classes.title}>
         OUR DEVELOPER TEAM
       </Typography>
@@ -181,7 +181,7 @@ function Team() {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </div>
   );
 }
 
