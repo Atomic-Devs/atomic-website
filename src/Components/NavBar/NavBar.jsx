@@ -9,19 +9,23 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from '@material-ui/core/CssBaseline';
-import "../../styles.css";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles({
+ 
+
   navbarDisplayFlex: {
     display: `flex`,
     justifyContent: `space-between`,
     alignItems: `center`,
+    // background: "red",
+   
   },
   navDisplayFlex: {
     display: `flex`,
-    justifyContent: `space-between`
+    justifyContent: `space-between`,
+    
   },
   linkText: {
     textDecoration: `none`,
@@ -32,6 +36,9 @@ const useStyles = makeStyles({
     paddingRight: `10px`,
     fill: `#fff`,
     fontSize: `40px`,
+    '&:hover': {
+     color: "red",
+    }
   },
 });
 
@@ -48,8 +55,8 @@ function NavBar() {
   return (
     <>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
+      <AppBar position="fixed" style={{background: '#202020'}} >
+        <Toolbar >
           <Container maxWidth="md" className={classes.navbarDisplayFlex}>
             <List
               component="nav"
