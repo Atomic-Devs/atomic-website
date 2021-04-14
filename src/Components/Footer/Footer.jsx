@@ -38,8 +38,13 @@ function Footer() {
   return (
     <footer className={classes.footer} >
       <Typography align="center">
-        <GitHubIcon className={classes.socialLinks} />
-        <LinkedInIcon className={classes.socialLinks} />
+        <Link href="https://github.com/oslabs-beta/atomic" target="_blank" rel="noreferrer">
+          <GitHubIcon className={classes.socialLinks} />
+        </Link>
+        <Link href="https://www.linkedin.com/in/atomic-devtool/" target="_blank" rel="noreferrer">
+          <LinkedInIcon className={classes.socialLinks} />
+        </Link>
+
       </Typography>
       <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
         Atomic is an open source product!
