@@ -9,9 +9,10 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from '@material-ui/core/CssBaseline';
-import "../../styles.css";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Link from '@material-ui/core/Link';
+
 
 const useStyles = makeStyles({
   navbarDisplayFlex: {
@@ -66,8 +67,12 @@ function NavBar() {
 
             </List>
             <div>
-              <GitHubIcon className={classes.socialLinks} />
-              <LinkedInIcon className={classes.socialLinks} />
+              <Link href="https://github.com/oslabs-beta/atomic" target="_blank" rel="noreferrer">
+                <GitHubIcon className={classes.socialLinks} />
+              </Link>
+              <Link href="https://www.linkedin.com/in/atomic-devtool/" target="_blank" rel="noreferrer">
+                <LinkedInIcon className={classes.socialLinks} />
+              </Link>
             </div>
           </Container>
         </Toolbar>
