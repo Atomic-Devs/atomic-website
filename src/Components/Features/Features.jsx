@@ -6,6 +6,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
 import Paper from "@material-ui/core/Paper";
+import stateDiff from "./stateDiff.gif";
+import componentTree from "./componentTree.gif";
+import componentGraph from "./componentGraph.gif";
+import atomNetwork from "./atomNetwork.gif";
 
 const useStyles = makeStyles((theme) => ({
   cardGrid: {
@@ -26,13 +30,26 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "40px",
   },
   cardDiscription: {
-    fontSize: "15px",
+    fontSize: "13px",
+    alignContent: "center"
   },
   cardTitle: {
     fontWeight: "bold",
     color: "#1cb5c9",
-
-  }
+  },
+  upcomingFeaturesTitle: {
+    fontSize: "30px",
+    fontWeight: "bold",
+    paddingTop: "25px",
+    color: "white"
+    
+  },
+  upcomingFeaturesTitleCard: {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    background: "#202020"
+  },
 }));
 
 function Features() {
@@ -43,38 +60,46 @@ function Features() {
       <Typography align="center" className={classes.title}>
         FEATURES
       </Typography>
-      {/* <Divider className={classes.divider} /> */}
+      
 
       <Container className={classes.cardGrid} maxWidth="md">
         <Grid container spacing={2}>
-          <Grid item md={8}>
-            <Card className={classes.card}>
-              <Paper elevation={3}></Paper>
-              <p>gif goes here</p>
-            </Card>
-          </Grid>
-          <Grid item md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
-                <Typography  variant="h5" component="h2" className={classes.cardTitle}>
-                  Time Travel
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  className={classes.cardTitle}
+                >
+                  State Change Display
                 </Typography>
                 <Typography className={classes.cardDiscription}>
-                  The ability to jump between state changes within the devtool.
-                  The snapshot list provides the state throughout the
-                  Jotai-built application runtime and each time state changes, a
-                  new snapshot is added. By pressing the jump button next to
-                  each snapshot, you are able to visualize state for a specific
-                  snapshot.
+                  Easily compare atom state changes between snapshots in
+                  real-time.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
+          <Grid item xs={12} sm={6} md={8}>
+            <Card className={classes.card}>
+              <img className="gif" src={stateDiff} alt="" />
+            </Card>
+          </Grid>
 
-          <Grid item md={4}>
+          <Grid item xs={12} sm={6} md={8}>
+            <Card className={classes.card}>
+              <img className="gif" src={componentGraph} alt="" />
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
-                <Typography  variant="h5" component="h2" className={classes.cardTitle}>
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  className={classes.cardTitle}
+                >
                   Component Graph Visualization
                 </Typography>
                 <Typography className={classes.cardDiscription}>
@@ -89,23 +114,15 @@ function Features() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item md={8}>
-            <Card className={classes.card}>
-              <Paper elevation={3}></Paper>
-              <p>gif goes here</p>
-            </Card>
-          </Grid>
 
-          <Grid item md={8}>
-            <Card className={classes.card}>
-              <Paper elevation={3}></Paper>
-              <p>gif goes here</p>
-            </Card>
-          </Grid>
-          <Grid item md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
-                <Typography  variant="h5" component="h2" className={classes.cardTitle}>
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  className={classes.cardTitle}
+                >
                   Atom Network
                 </Typography>
                 <Typography className={classes.cardDiscription}>
@@ -116,43 +133,64 @@ function Features() {
               </CardContent>
             </Card>
           </Grid>
+          <Grid item xs={12} sm={6} md={8}>
+            <Card className={classes.card}>
+              <img className="gif" src={atomNetwork} alt="" />
+            </Card>
+          </Grid>
 
-          <Grid item md={4}>
+          <Grid item  xs={12} sm={6} md={8}>
+            <Card className={classes.card}>
+              <img className="gif" src={componentTree} alt="" />
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
-                <Typography  variant="h5" component="h2" className={classes.cardTitle}>
-                  State Change Display
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  className={classes.cardTitle}
+                >
+                  Component Tree
                 </Typography>
+
                 <Typography className={classes.cardDiscription}>
-                  Easily compare atom state changes between snapshots in
-                  real-time.
+                  Displays a Jotai-built application component tree structure
+                  with subscribed atom(s) for a given snapshot.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
-          <Grid item md={8}>
-            <Card className={classes.card}>
-              <Paper elevation={3}></Paper>
-              <p>gif goes here</p>
-            </Card>
-          </Grid>
 
-          <Grid item md={8}>
-            <Card className={classes.card}>
-              <Paper elevation={3}></Paper>
-              <p>gif goes here</p>
+          <Grid item xs={12} sm={6} md={4} >
+            <Card className={classes.upcomingFeaturesTitleCard} >
+              <Typography
+                align="center"
+                className={classes.upcomingFeaturesTitle}
+              
+              >
+                UPCOMING FEATURES
+              </Typography>
             </Card>
           </Grid>
-          <Grid item md={4}>
+          <Grid item xs={12} sm={6} md={8}>
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
-                <Typography  variant="h5" component="h2" className={classes.cardTitle}>
-                  Component Tree
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  className={classes.cardTitle}
+                >
+                  Time Travel
                 </Typography>
-              
                 <Typography className={classes.cardDiscription}>
-                  Displays a Jotai-built application component tree structure
-                  with subscribed atom(s) for a given snapshot.
+                  The ability to jump between state changes within the devtool.
+                  The snapshot list provides the state throughout the
+                  Jotai-built application runtime and each time state changes, a
+                  new snapshot is added. By pressing the jump button next to
+                  each snapshot, you are able to visualize state for a specific
+                  snapshot.
                 </Typography>
               </CardContent>
             </Card>
