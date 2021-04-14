@@ -42,7 +42,7 @@ function Footer() {
         <LinkedInIcon className={classes.socialLinks} />
       </Typography>
       <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-        Atomic is an open source project!
+        Atomic is an open source product!
       </Typography>
       <Copyright />
     </footer>
