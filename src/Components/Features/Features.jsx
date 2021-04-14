@@ -21,6 +21,11 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
   },
+  title: {
+    fontSize: "45px",
+    fontWeight: "bold",
+    paddingTop: "40px"
+  },
 }));
 
 const cards = [1, 2, 3, 4, 5];
@@ -30,8 +35,8 @@ function Features() {
 
   return (
     <>
-      <Typography component="h2" variant="h4" align="center" gutterBottom>
-        Features
+     <Typography align="center" className={classes.title}>
+        FEATURES
       </Typography>
       {/* <Divider className={classes.divider} /> */}
 
