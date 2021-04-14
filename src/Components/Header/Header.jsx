@@ -27,7 +27,7 @@ function Header() {
           component="h1"
           variant="h2"
           align="center"
-          style={{ color: "white" }}
+          style={{ color: "white", fontWeight:"bold"}}
         >
           Atomic
         </Typography>

@@ -27,6 +27,7 @@ const useStyles = makeStyles({
   navDisplayFlex: {
     display: `flex`,
     justifyContent: `space-between`,
+   
     
   },
   linkText: {
@@ -35,13 +36,12 @@ const useStyles = makeStyles({
     color: `white`
   },
   socialLinks: {
-    paddingRight: `10px`,
-    fill: `#fff`,
-    fontSize: `40px`,
-    '&:hover': {
-     color: "red",
-    }
+    marginRight: `10px`,
+    fill: `#1cb5c9`,
+    fontSize: `35px`,
+    
   },
+ 
 });
 
 const navLinks = [
