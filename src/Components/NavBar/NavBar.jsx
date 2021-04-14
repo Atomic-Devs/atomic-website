@@ -15,14 +15,20 @@ import Link from '@material-ui/core/Link';
 
 
 const useStyles = makeStyles({
+ 
+
   navbarDisplayFlex: {
     display: `flex`,
     justifyContent: `space-between`,
     alignItems: `center`,
+    // background: "red",
+   
   },
   navDisplayFlex: {
     display: `flex`,
-    justifyContent: `space-between`
+    justifyContent: `space-between`,
+   
+    
   },
   linkText: {
     textDecoration: `none`,
@@ -30,10 +36,12 @@ const useStyles = makeStyles({
     color: `white`
   },
   socialLinks: {
-    paddingRight: `10px`,
-    fill: `#fff`,
-    fontSize: `40px`,
+    marginRight: `10px`,
+    fill: `#1cb5c9`,
+    fontSize: `35px`,
+    
   },
+ 
 });
 
 const navLinks = [
@@ -49,8 +57,8 @@ function NavBar() {
   return (
     <>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
+      <AppBar position="fixed" style={{background: '#202020'}} >
+        <Toolbar >
           <Container maxWidth="md" className={classes.navbarDisplayFlex}>
             <List
               component="nav"

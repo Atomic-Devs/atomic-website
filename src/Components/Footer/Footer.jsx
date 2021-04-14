@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
   socialLinks: {
     paddingRight: `10px`,
-    fill: `#000000`,
+    fill: `#1cb5c9`,
     fontSize: `40px`,
   },
 }));
