@@ -16,33 +16,32 @@ import mark from '../../assets/images/branding/mark.png';
 
 
 const useStyles = makeStyles({
-
-
   navbarDisplayFlex: {
     display: `flex`,
     justifyContent: `space-between`,
     alignItems: `center`,
     // background: "red",
-
   },
   navDisplayFlex: {
     display: `flex`,
     justifyContent: `space-between`,
-
-
   },
   linkText: {
     textDecoration: `none`,
     textTransform: `uppercase`,
-    color: `white`
+    color: `white`,
+    "&:hover": {
+      color: '#1cb5c9'
+    }
   },
   socialLinks: {
     marginRight: `10px`,
-    fill: `#1cb5c9`,
+    color: `white`,
     fontSize: `35px`,
-
+    "&:hover": {
+      color: '#1cb5c9'
+    }
   },
-
 });
 
 const navLinks = [
@@ -66,7 +65,9 @@ function NavBar() {
               aria-labelledby="main navigation"
               className={classes.navDisplayFlex}
             >
-              <img src={mark} alt="atomic logo" height="40px" style={{ paddingRight: 16, marginTop: 4 }} />
+              <a href={`#home`} key={`home`}>
+                <img src={mark} alt="atomic logo" height="40px" style={{ paddingRight: 16, marginTop: 4 }} />
+              </a>
               {navLinks.map(({ title, path }) => (
                 <a href={path} key={title} className={classes.linkText}>
                   <ListItem button>
