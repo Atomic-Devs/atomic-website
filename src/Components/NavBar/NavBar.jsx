@@ -12,23 +12,24 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Link from '@material-ui/core/Link';
+import mark from '../../assets/images/branding/mark.png';
 
 
 const useStyles = makeStyles({
- 
+
 
   navbarDisplayFlex: {
     display: `flex`,
     justifyContent: `space-between`,
     alignItems: `center`,
     // background: "red",
-   
+
   },
   navDisplayFlex: {
     display: `flex`,
     justifyContent: `space-between`,
-   
-    
+
+
   },
   linkText: {
     textDecoration: `none`,
@@ -39,9 +40,9 @@ const useStyles = makeStyles({
     marginRight: `10px`,
     fill: `#1cb5c9`,
     fontSize: `35px`,
-    
+
   },
- 
+
 });
 
 const navLinks = [
@@ -57,7 +58,7 @@ function NavBar() {
   return (
     <div id="home">
       <CssBaseline />
-      <AppBar position="fixed" style={{background: '#202020'}} >
+      <AppBar position="fixed" style={{ background: '#202020' }} >
         <Toolbar >
           <Container maxWidth="md" className={classes.navbarDisplayFlex}>
             <List
@@ -65,6 +66,7 @@ function NavBar() {
               aria-labelledby="main navigation"
               className={classes.navDisplayFlex}
             >
+              <img src={mark} alt="atomic logo" height="40px" style={{ paddingRight: 16, marginTop: 4 }} />
               {navLinks.map(({ title, path }) => (
                 <a href={path} key={title} className={classes.linkText}>
                   <ListItem button>

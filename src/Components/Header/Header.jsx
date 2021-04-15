@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
+import logo from "../../assets/images/branding/logo.png"
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -27,13 +28,13 @@ function Header() {
           component="h1"
           variant="h2"
           align="center"
-          style={{ color: "white", fontWeight:"bold"}}
+          style={{ color: "white", fontWeight: "bold" }}
         >
-          Atomic
+          <img src={logo} alt="atomic logo" width="25%" />
         </Typography>
         {/* Site Description */}
         <Typography variant="h5" align="center" style={{ color: "white" }}>
-        Developer tool visualizer for React applications built with Jotai
+          Developer tool visualizer for React applications built with Jotai
         </Typography>
         {/* <Typography  align="center" style={{ color: "white" }}>
         Provides real-time snapshots of a Jotai application's atomic state and component structure allowing developers to easily debug and build an application that is more performant.
@@ -41,34 +42,34 @@ function Header() {
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
-              <a href="https://www.npmjs.com/package/atomic-devtools" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
-              <Button
-                variant="contained"
-                style={{
-                  backgroundColor: "#1cb5c9",
-                  color: "black",
-                  border: "1px solid #1cb5c9",
+              <a href="https://www.npmjs.com/package/atomic-devtools" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+                <Button
+                  variant="contained"
+                  style={{
+                    backgroundColor: "#1cb5c9",
+                    color: "black",
+                    border: "1px solid #1cb5c9",
 
-                }}
-              >
-                NPM Package
+                  }}
+                >
+                  NPM Package
               </Button>
               </a>
             </Grid>
             <Grid item>
-            <a href="https://www.npmjs.com/package/atomic-devtools" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
-              <Button
-                variant="outlined"
-                style={{ color: "white", border: "1px solid white" }}
-              >
-                Chrome Extension
+              <a href="https://www.npmjs.com/package/atomic-devtools" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+                <Button
+                  variant="outlined"
+                  style={{ color: "white", border: "1px solid white" }}
+                >
+                  Chrome Extension
               </Button>
               </a>
             </Grid>
           </Grid>
         </div>
       </Container>
-    
+
     </div >
   );
 }
