@@ -41,24 +41,29 @@ function Header() {
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
+              <a href="https://www.npmjs.com/package/atomic-devtools" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
               <Button
                 variant="contained"
                 style={{
                   backgroundColor: "#1cb5c9",
                   color: "black",
                   border: "1px solid #1cb5c9",
+
                 }}
               >
-                Install
+                NPM Package
               </Button>
+              </a>
             </Grid>
             <Grid item>
+            <a href="https://www.npmjs.com/package/atomic-devtools" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
               <Button
                 variant="outlined"
                 style={{ color: "white", border: "1px solid white" }}
               >
-                Download
+                Chrome Extension
               </Button>
+              </a>
             </Grid>
           </Grid>
         </div>
