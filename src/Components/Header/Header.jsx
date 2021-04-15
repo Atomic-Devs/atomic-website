@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
-import logo from "../../assets/images/branding/logo.png"
+import logo2 from "../../assets/images/branding/logo2.png"
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -30,7 +30,7 @@ function Header() {
           align="center"
           style={{ color: "white", fontWeight: "bold" }}
         >
-          <img src={logo} alt="atomic logo" width="25%" />
+          <img src={logo2} alt="atomic logo" width="25%" />
         </Typography>
         {/* Site Description */}
         <Typography variant="h5" align="center" style={{ color: "white" }}>
