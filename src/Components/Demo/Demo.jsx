@@ -21,13 +21,13 @@ function Demo() {
         DEMO
       </Typography>
       <Typography variant="h5" align="center" style={{ color: "black", paddingTop: "10px" }}>
-        Check out our demo application! <Link
+        Check out our demo application <Link
           href="https://atomic-devs.github.io/jotai-tic-tac-toe-demo/"
           target="_blank"
           rel="noreferrer"
           style={{textDecoration: "none", color:"#1cb5c9"}}
         >
-          here
+          here.
         </Link>{" "}
         </Typography>
       </div>
