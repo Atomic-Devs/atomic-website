@@ -129,8 +129,8 @@ function Features() {
                 </Typography>
                 <Typography className={classes.cardDiscription}>
                   Visualize a specfic atom's dependents (displays all atoms
-                  affected by the parent atom) and read dependencies (displays
-                  all atoms that affect the parent atom) relationships.
+                  affected by the inspected atom) and read dependencies (displays
+                  all atoms that affect the inspected atom) relationships.
                 </Typography>
               </CardContent>
             </Card>
@@ -164,7 +164,7 @@ function Features() {
               </CardContent>
             </Card>
           </Grid>
-
+      
           <Grid item xs={12} sm={6} md={4} >
             <Card className={classes.upcomingFeaturesTitleCard} >
               <Typography
@@ -187,12 +187,7 @@ function Features() {
                   Time Travel
                 </Typography>
                 <Typography className={classes.cardDiscription}>
-                  The ability to jump between state changes within the devtool.
-                  The snapshot list provides the state throughout the
-                  Jotai-built application runtime and each time state changes, a
-                  new snapshot is added. By pressing the jump button next to
-                  each snapshot, you are able to visualize state for a specific
-                  snapshot.
+                Currently, the ability to jump between state changes within the devtool is feasible. The snapshot list provides the state throughout the Jotai-built application runtime and each time state changes, a new snapshot is added. We intend to develop functionality that will, pressing the jump button next to each snapshot, revert application state to the desired historical snapshot.
                 </Typography>
               </CardContent>
             </Card>
