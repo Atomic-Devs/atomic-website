@@ -57,7 +57,7 @@ function Header() {
               </a>
             </Grid>
             <Grid item>
-              <a href="https://www.npmjs.com/package/atomic-devtools" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+              <a href="https://chrome.google.com/webstore/detail/atomic-dev-tool/nnchkolpjdpkpbolophmdkglenapodbo" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
                 <Button
                   variant="outlined"
                   style={{ color: "white", border: "1px solid white" }}

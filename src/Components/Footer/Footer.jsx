@@ -19,15 +19,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Copyright() {
+function Established() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Atomic
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+      {'Established 2021'}
+      {/* {new Date().getFullYear()} */}
     </Typography>
   );
 }
@@ -49,7 +45,7 @@ function Footer() {
       <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
         Atomic is an open source product!
       </Typography>
-      <Copyright />
+      <Established />
     </footer>
   );
 }
